@@ -87,7 +87,7 @@ a:focus {
 }
 .navbar-brand {
     font-size: 0.7em;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border:1px solid #fff;
     text-transform: uppercase;
@@ -100,8 +100,8 @@ a:focus {
 .navbar-brand span {
     padding: 0.496em .6em;
     display: inline-block;
-    background: #fff;
-    color: #2e2f2f;
+    background:#2e2f2f;
+    color: #fff;
 }
 .navbar-brand i {
     padding: 0.5em 0.5em 0.5em 0em;
@@ -109,7 +109,7 @@ a:focus {
     display: inline-block;
 }
 a.navbar-brand:hover {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
  ul.top_icons {
     position: absolute;
