@@ -33,11 +33,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div id="myModal" class="modal fade">
 		<div class="modal-dialog" >
 			<div class="modal-content" >
-				<div class="modal-header" style="background-color: #1bc2a2;">
+				<div class="modal-header" style="background-color:black;color: white;">
 					<h2 class="modal-title" >Notification:</h2>
 				</div>
 				<div class="modal-body">
-						
+					<h2>Donate Your Mask</h2>
+					<div style="padding:10px;">
+						<h4>-Donate 250grams of mask and get 50% Discount</h4>
+					</div>
+					<div style="overflow: hidden;padding:10px;">
+						<button style="background-color: black; color: white;" onclick="checkout()">Donate</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -483,6 +489,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script>
 		$(document).ready(function(){
 			$("#myModal").modal('show');})
+		function checkout(){
+			window.location.replace("checkout.html")
+		}
 	</script>
 
 	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
