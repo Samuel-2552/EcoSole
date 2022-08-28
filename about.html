@@ -55,10 +55,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!-- cart details -->
 				<div class="top_nav_right">
 					<div class="shoecart shoecart2 cart cart box_1">
-						<form action="#" method="post" class="last">
+						<form method="post" class="last">
 							<input type="hidden" name="cmd" value="_cart">
 							<input type="hidden" name="display" value="1">
-							<button class="top_shoe_cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+							<a style="margin-left: 150px; border:1px solid gray; background-color:rgba(27, 25, 25, 0.27); color:black" href="checkout.html">checkout</a>
 						</form>
 					</div>
 				</div>
@@ -222,7 +222,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //js -->
 	<!-- cart-js -->
 	<script src="js/minicart.js"></script>
-	<script>
+	<!--<script>
 		shoe.render();
 
 		shoe.cart.on('shoe_checkout', function (evt) {
@@ -234,7 +234,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				for (i = 0, len = items.length; i < len; i++) {}
 			}
 		});
-	</script>
+	</script>-->
 	<!-- //cart-js -->
 	<!-- /nav -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -243,19 +243,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //nav -->
 	<!-- cart-js -->
 	<script src="js/minicart.js"></script>
-	<script>
-		shoe.render();
-
-		shoe.cart.on('shoe_checkout', function (evt) {
-			var items, len, i;
-
-			if (this.subtotal() > 0) {
-				items = this.items();
-
-				for (i = 0, len = items.length; i < len; i++) {}
-			}
-		});
-	</script>
+	
 	<!-- //cart-js -->
 	<!-- script for responsive tabs -->
 	<script src="js/easy-responsive-tabs.js"></script>
