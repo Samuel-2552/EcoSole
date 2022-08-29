@@ -29,6 +29,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
+	<!--notification-->
+	<div id="myModal" class="modal fade">
+		<div class="modal-dialog" >
+			<div class="modal-content" >
+				<div class="modal-header" style="background-color:black;color: white;">
+					<h2 class="modal-title" >Donate Your Mask</h2>
+				</div>
+				<div class="modal-body">
+					<div style="padding:10px;">
+						<h4>-Donate masks and get Discount</h4>
+							<li>100 masks: 10%</li>
+							<li>250 masks: 25%</li>
+							<li>500 masks: 50%</li>
+							<li>800 masks: 100%</li>
+					</div>
+					<div style="overflow: hidden;padding:10px;">
+						<button style="background-color: black; color: white;" onclick="checkout()">Donate</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- banner -->
 	<div class="banner_top" id="home">
 		<div class="wrapper_top_w3layouts">
@@ -59,7 +81,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<form method="post" class="last">
 							<input type="hidden" name="cmd" value="_cart">
 							<input type="hidden" name="display" value="1">
-							<a style="margin-left: 150px; border:1px solid gray; background-color:rgba(27, 25, 25, 0.27); color:black" href="checkout.html">checkout</a>
+							<a style="margin-left: 150px; border:1px solid gray; background-color:rgba(27, 25, 25, 0.27); color:black" href="checkout.html">CheckOut</a>
 						</form>
 					</div>
 				</div>
@@ -333,13 +355,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</a>
 					</li>
 					<li>
-						<a href="#" class="instagram">
+						<a href="https://instagram.com/ecosole_slippers?igshid=YmMyMTA2M2Y=" class="instagram">
 							<div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
 							<div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="pinterest">
+						<a href="https://www.linkedin.com/posts/ecosole21_sih2022-ecosole-sih-activity-6966452053892091904-_N2j?utm_source=linkedin_share&utm_medium=android_app" class="pinterest">
 							<div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
 							<div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
 						</a>
@@ -467,6 +489,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	<!-- //end-smoth-scrolling -->
+	<script>
+		$(document).ready(function(){
+			$("#myModal").modal('show');})
+		function checkout(){
+			window.location.href = "discountcheckout.html";
+		}
+	</script>
 
 	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 
