@@ -27,6 +27,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link href="//fonts.googleapis.com/css?family=Montserrat:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
 	    rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#dropDownId").click(function(){
+				var a = $('#dropDownId').val();
+				console.log(a);
+				$("#discount").text(a+"%");
+				$("#total").text("₹"+(50+549-((549*a)/100)));
+			});
+		  });
+	</script>
 </head>
 
 <body>
@@ -147,9 +158,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-4 checkout-left-basket">
 						<h4>Continue to basket</h4>
 						<ul>
+							<li>Donate masks<i>-</i> <span><select id="dropDownId" name = "dropdown">
+								
+								<option value = "1" selected>0 masks</option>
+								<option value = "10" >100 masks</option>
+								<option value = "25">250 masks</option>
+								<option value = "50">500 masks</option>
+								<option value = "100">800 masks</option>
+								
+							 </select></span></li>
 							<li>Product1 <i>-</i> <span>&#x20b9;549.00 </span></li>
-						
-							<li>Total <i>-</i> <span>&#x20b9;549.00</span></li>
+							 <li>Discount <i>-</i> <span id="discount">0%</span></li>
+							 <li>Delivery <i>-</i> <span id="discount">&#x20b9;50.00</span></li>
+							<li>Total <i>-</i> <span id="total">&#x20b9;599.00</span></li>
 						</ul>
 					</div>
 					<div class="col-md-8 address_form">
